@@ -3,5 +3,41 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "lib-turbo-components-scd": {
+      "projectType": "library",
+      "root": "projects/lib-turbo-components-scd",
+      "sourceRoot": "projects/lib-turbo-components-scd/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lib-turbo-components-scd/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lib-turbo-components-scd/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lib-turbo-components-scd/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/lib-turbo-components-scd/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "8ffc28e7-18cd-4133-bac9-7a255d2e66cf"
   }
 }
