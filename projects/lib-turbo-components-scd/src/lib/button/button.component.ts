@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button.component.scss'
 })
 
-export class ButtonComponent {
+export class ButtonComponentLib {
   @Input() title = 'Button'
 }
