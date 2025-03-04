@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-button',
   standalone: true,
   imports: [],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  styleUrl: './button.component.scss'
 })
-export class ButtonComponent {
 
+export class ButtonComponent {
+  @Input() title = 'Button'
 }

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ButtonComponent } from 'lib-turbo-components-scd';
+// import { ButtonComponent } from '../../../lib-turbo-components-scd/src/lib/button/button.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,ButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
