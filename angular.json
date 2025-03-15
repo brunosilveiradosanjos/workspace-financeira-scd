@@ -65,7 +65,8 @@
               }
             ],
             "styles": [
-              "projects/angular-app/src/styles.scss"
+              "projects/angular-app/src/styles.scss",
+              "projects/lib-turbo-components-scd/src/tailwind.scss"
             ],
             "scripts": []
           },
