@@ -3,5 +3,6 @@
   "dest": "../../dist/lib-turbo-components-scd",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["dist/tailwind.css"]
 }

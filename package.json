@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build lib-turbo-components-scd",
+    "build:tailwind": "tailwindcss -i projects/lib-turbo-components-scd/src/tailwind.scss -o dist/tailwind.css",
+    "build": "npm run build:tailwind && ng build lib-turbo-components-scd",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
